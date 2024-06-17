@@ -1,5 +1,5 @@
 # ATU Machine Learning Tool ( atuml )
-To install the ATU Machine Learning Tool's AI development tool, simply place atuml in the /usr/bin directory to use it!
+To install the ATU Machine Learning Tool's AI development tool , simply place atuml in the /usr/bin directory to use it!
 
 # How to using atuml tool
 
@@ -39,3 +39,7 @@ To install the ATU Machine Learning Tool's AI development tool, simply place atu
   * $ atuml –demo ObjectDetect_YOLOv5s
 
   * $ atuml –demo ObjectDetect_Gstreamer
+ 
+  ![圖1](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_1.jpg)
+  
+  ![圖2](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_2.jpg)
