@@ -41,5 +41,4 @@ To install the ATU Machine Learning Tool's AI development tool [atuml](https://g
   * $ atuml –demo ObjectDetect_Gstreamer
  
   ![圖1](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_1.jpg)
-  
-  ![圖2](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_2.jpg)
+
