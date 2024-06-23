@@ -222,13 +222,27 @@ class ATUML:
             except Exception as e:
                 print("Error Message : allocate_tensors Fail")
                 return -1
-            
+
+            # data nChannel
+            nChannel = len(input_details[0]['shape'])
+            if (nChannel==1):
+                input_data_array =np.zeros(input_details[0]['shape'][0])      
+            elif (nChannel==2):
+                input_data_array =np.zeros((input_details[0]['shape'][0],input_details[0]['shape'][1]))
+            elif (nChannel==3):
+                input_data_array =np.zeros((input_details[0]['shape'][0],input_details[0]['shape'][1],input_details[0]['shape'][2]))
+            elif (nChannel==4):
+                input_data_array =np.zeros((input_details[0]['shape'][0],input_details[0]['shape'][1],input_details[0]['shape'][2],input_details[0]['shape'][3]))
+            else:
+                return 1
+
+            # data type
             if input_details[0]['dtype']==np.float32 :
-                interpreter.set_tensor(input_details[0]['index'], np.zeros((1,input_details[0]['shape'][1],input_details[0]['shape'][2],input_details[0]['shape'][3])).astype("float32") )
+                interpreter.set_tensor(input_details[0]['index'], input_data_array.astype("float32") )
             elif input_details[0]['dtype']==np.int8 :
-                interpreter.set_tensor(input_details[0]['index'], np.zeros((1,input_details[0]['shape'][1],input_details[0]['shape'][2],input_details[0]['shape'][3])).astype("int8") )
+                interpreter.set_tensor(input_details[0]['index'], input_data_array.astype("int8") )
             else :
-                interpreter.set_tensor(input_details[0]['index'], np.zeros((1,input_details[0]['shape'][1],input_details[0]['shape'][2],input_details[0]['shape'][3])).astype("uint8") )
+                interpreter.set_tensor(input_details[0]['index'], input_data_array.astype("uint8") )
 
             # warm-up
             interpreter.invoke()
