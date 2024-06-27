@@ -16,19 +16,19 @@ To install the ATU Machine Learning Tool's AI development tool [(atuml)](https:/
 
   * using NPU
 
-    * $ atuml –-run <tflite> –-acc "npu"
+    * $ atuml –-run "tflite" –-acc "npu"
 
   * using GPU
 
-    * $ atuml –-run <tflite> –-acc "gpu"
+    * $ atuml –-run "tflite" –-acc "gpu"
 
   * using CPU
 
-    * $ atuml –-run <tflite> –-acc "cpu"
+    * $ atuml –-run "tflite" –-acc "cpu"
 
 * **(4) Benchmark**
 
-  * $ atuml -b <tflite>
+  * $ atuml -b "tflite" 
 
   * $ atuml –-benchmark_loop_generate_file mlmodel/ –csv_status 'w+'
 
