@@ -42,3 +42,6 @@ To install the ATU Machine Learning Tool's AI development tool [(atuml)](https:/
  
   ![圖1](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_1.jpg)
 
+
+* 必須安裝 :
+  * pip3 install requests
