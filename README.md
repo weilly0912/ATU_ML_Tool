@@ -1,44 +1,44 @@
-# ATU Machine Learning Tool ( atuml )
-To install the ATU Machine Learning Tool's AI development tool [(atuml)](https://github.com/weilly0912/ATU_ML_Tool/blob/main/atuml) on NXP i.MX Series , simply place this tool in the /usr/bin directory to use it!
+# i.MX Runtime Tool (imxrt) 
+To install the i.MX Runtime's AI development tool [(atuml)](https://github.com/weilly0912/ATU_ML_Tool/blob/main/atuml) on NXP i.MX Series , simply place this tool in the /usr/bin directory to use it!
 
-# How to using atuml tool
+# How to using imxrt tool
 
 * **(1) help**
 
-  * $ atuml –-help
+  * $ imxrt –-help
 
 
 * **(2) display systems information**
 
-  * $ atuml –-info 1
+  * $ imxrt –-info 1
 
 * **(3) running model**
 
   * using NPU
 
-    * $ atuml –-run "tflite" –-acc "npu"
+    * $ imxrt –-run "tflite" –-acc "npu"
 
   * using GPU
 
-    * $ atuml –-run "tflite" –-acc "gpu"
+    * $ imxrt –-run "tflite" –-acc "gpu"
 
   * using CPU
 
-    * $ atuml –-run "tflite" –-acc "cpu"
+    * $ imxrt –-run "tflite" –-acc "cpu"
 
 * **(4) Benchmark**
 
-  * $ atuml -b "tflite" 
+  * $ imxrt -b "tflite" 
 
-  * $ atuml –-benchmark_loop_generate_file mlmodel/ –csv_status 'w+'
+  * $ imxrt –-benchmark_loop_generate_file mlmodel/ –csv_status 'w+'
 
 * **DEMO**
 
-  * $ atuml --demo help
+  * $ imxrt --demo help
 
-  * $ atuml –-demo ObjectDetect_YOLOv5s
+  * $ imxrt –-demo ObjectDetect_YOLOv5s
 
-  * $ atuml –-demo ObjectDetect_Gstreamer
+  * $ imxrt –-demo ObjectDetect_Gstreamer
  
   ![圖1](https://github.com/weilly0912/ATU_ML_Tool/blob/main/result_1.jpg)
 
