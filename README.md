@@ -1,5 +1,5 @@
 # i.MX Runtime Tool (imxrt) 
-To install the i.MX Runtime's AI development tool [(atuml)](https://github.com/weilly0912/ATU_ML_Tool/blob/main/imxrt) on NXP i.MX Series , simply place this tool in the /usr/bin directory to use it!
+To install the i.MX Runtime's AI development tool [(imxrt)](https://github.com/weilly0912/ATU_ML_Tool/blob/main/imxrt) on NXP i.MX Series , simply place this tool in the /usr/bin directory to use it!
 
 # How to using imxrt tool
 
